@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>CozyPomodoro</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <!-- Floating decorative elements -->
+    <div class="pixel-decoration pixel-decoration-1"></div>
+    <div class="pixel-decoration pixel-decoration-2"></div>
+    <div class="pixel-decoration pixel-decoration-3"></div>
+    <div class="pixel-decoration pixel-decoration-4"></div>
+    
+    <div class="container">
+        <div class="header">
+            <h1>🍅 CozyPomodoro</h1>
+            <div id="demo-badge" style="display: none; font-size: 12px; opacity: 0.7; margin-top: 5px;">Demo Mode (Fast Timer)</div>
+        </div>
+        
+        <!-- Celebration overlay -->
+        <div id="celebration-overlay" class="celebration-overlay" style="display: none;">
+            <div class="celebration-content">
+                <div class="celebration-emoji">🎉</div>
+                <div class="celebration-text">Great Work!</div>
+                <div class="celebration-subtext">Time for a break!</div>
+            </div>
+            <!-- Confetti particles -->
+            <div class="confetti-container">
+                <div class="confetti confetti-1"></div>
+                <div class="confetti confetti-2"></div>
+                <div class="confetti confetti-3"></div>
+                <div class="confetti confetti-4"></div>
+                <div class="confetti confetti-5"></div>
+                <div class="confetti confetti-6"></div>
+            </div>
+        </div>
+        
+        <div class="timer-display">
+            <div id="time-remaining">25:00</div>
+            <div id="session-type">Work Session</div>
+        </div>
+        
+        <div class="controls">
+            <button id="start-btn" class="btn primary">Start</button>
+            <button id="pause-btn" class="btn secondary" style="display: none;">Pause</button>
+            <button id="reset-btn" class="btn secondary">Reset</button>
+        </div>
+        
+        <div class="progress">
+            <div class="session-info">
+                <span>Session <span id="current-session">1</span> of 4</span>
+            </div>
+            <div class="progress-bar">
+                <div id="progress-fill"></div>
+            </div>
+        </div>
+        
+        <div class="settings">
+            <label>
+                <input type="checkbox" id="sound-enabled" checked>
+                Sound notifications
+            </label>
+        </div>
+        
+        <!-- Cozy message -->
+        <div class="cozy-message">
+            <p id="cozy-text">🌟 Ready when you are, friend!</p>
+        </div>
+    </div>
+    
+    <script src="popup.js"></script>
+</body>
+</html>
